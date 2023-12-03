@@ -1,0 +1,168 @@
+<style>*
+          * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: #d29898;
+        line-height: 1.3;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(78, 115, 155);
+        z-index: 1000;
+    }
+    .container {
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    .cart-icon {
+        width: 20px;
+        height: 16px;
+        margin-left: auto;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo {
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .logo img {
+        max-height: 80px;
+    }
+    nav ul li.giohang {
+        margin-right: auto;
+        text-align: right;
+    }
+   nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            margin-right: 95px;/* Để tạo khoảng cách giữa các mục trong danh sách */
+        }
+
+        .logo{
+            width: 40px;
+            height: 40px;
+        }
+
+        .cart-icon {
+            width: 33px;
+            height: 22px;
+        }
+        nav ul li a{
+            color:#fff
+        }
+
+    #wrapper {
+        /* Adjust padding or margin to account for the fixed header */
+        padding-top: 80px; /* Use a value that suits your design */
+    }
+        .headline{
+            text-align: center;
+            margin: 40px 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #111;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 1px solid #bebebe;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 100%;
+            height: auto;
+        }
+        ul.products li .product-top{
+            position: relative;
+            overflow: hidden;
+        }
+        ul.products li .product-top .product-thumb{
+            display: block;
+
+        }
+        ul.products li .product-info .product-cat{
+            text-align: center;
+        }
+        ul.products li .product-name{
+            text-align: center;
+        }
+        ul.products li:hover .product-top .product-thumb img{
+            filter: opacity(80%);
+        }
+        ul.products li .product-top .product-thumb img{
+            display: block;
+        }
+        ul.products li .product-top a.buy-now{
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            background-color: #446084;
+            color: #fff;
+            padding: 10px 0px;
+            position: absolute;
+            bottom: -36px;
+            width: 100%;
+            transition: 0.2s ease-in-out;
+            opacity: 0.65;
+        }
+        ul.products li:hover a.buy-now{
+            bottom: 0px;
+        }
+        ul.products li .product-info{
+            padding:10px 0px;
+        }
+        ul.products li .product-info a{
+            display: block;
+            text-decoration: none;
+        }
+        ul.products li .product-info a.product-cat{
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #9e9e9e;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info a.product-name{
+            color: #334862;
+            padding: 3px 0px;
+        }
+        ul.products li .product-info .product-price{
+            color: #111;
+            padding: 2px 0px;
+            font-weight: 600;
+        }
+    </style>
